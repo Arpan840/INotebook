@@ -3,7 +3,7 @@ const corse=require("cors")
 const connectedToDatabase=require("./db")
 
 const app=express();
-app.use(corse())
+app.use(corse({origin:["http://localhost:3000","https://InOtebook.onrender.com"]}))
 app.use(express.json())
 const port=3001;
 const host="localhost";
