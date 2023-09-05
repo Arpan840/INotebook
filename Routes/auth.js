@@ -8,7 +8,7 @@ const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken");
 const secretKet = "ArpanIsA$ad$oy";
 
-
+//User Signup
 router.post("/CreateUSer", [body('email', "Enter the valid email").isEmail({ min: 3 }),
 body('password', "Enter the valid passward").isLength({ min: 5 }),
 body('name', "Enter the valid name").isLength({ min: 3 })
