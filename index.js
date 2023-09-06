@@ -3,7 +3,7 @@ const corse=require("cors")
 const connectedToDatabase=require("./db")
 
 const app=express();
-app.use(corse({origin:["http://localhost:3000","https://INotebook.onrender.com"]}))
+app.use(corse({origin:["http://localhost:3000","https://i-notebook-frontend-sand.vercel.app"]}))
 app.use(express.json())
 const port=3001 || 5500;
 const host="localhost";
