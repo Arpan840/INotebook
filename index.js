@@ -5,7 +5,7 @@ const connectedToDatabase=require("./db")
 const app=express();
 app.use(corse({origin:["http://localhost:3000","https://INotebook.onrender.com"]}))
 app.use(express.json())
-const port=3001;
+const port=3001 || 80;
 const host="localhost";
 app.use("/api/auth",require("./Routes/auth"));
 app.use("/api/notes",require("./Routes/notes"))
